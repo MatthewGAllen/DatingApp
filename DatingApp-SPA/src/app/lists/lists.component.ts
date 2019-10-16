@@ -17,7 +17,7 @@ export class ListsComponent implements OnInit {
   likesParam: string;
 
   constructor(private authServcie: AuthService,
-     private userService: UserService, private route: ActivatedRoute, private alertify: AlertifyService) { }
+              private userService: UserService, private route: ActivatedRoute, private alertify: AlertifyService) { }
 
   ngOnInit() {
     this.route.data.subscribe(data => {
